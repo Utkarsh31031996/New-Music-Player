@@ -1,0 +1,502 @@
+body{
+    background-color: rgb(15, 4, 37);
+    
+}
+
+/*..........................................Nav-bar................................................... */
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.nav-bar a{
+    font-size: 2rem;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    
+}
+.nav-bar i{
+    color: whitesmoke;
+    font-size: 2rem;
+    
+}
+.nav-bar input[type=search]{
+    background-color: rgb(6, 6, 68);
+    max-width: 30rem;
+    min-width: 5rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    font-weight: normal;
+    border-style: none;
+    margin-left: 50px;
+}
+.navImg{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navImg img{
+    width: 100%;
+    height: 100%;
+}
+.profileImg{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+}
+
+.profileImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ...........................................................Search-Bar............................... */
+.search-bar{                                            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar input:focus {
+    outline:none;
+}
+
+#mike i{
+    margin-left: -3.2rem;
+    color: grey;
+}
+
+/* ......................................................Band-Detail............................... */
+.Band{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    background-color: #060631;
+    position: relative;
+    
+}
+.Band img{
+    display: flex;
+    width: 35%;
+    position: relative;
+    
+}
+
+.Band-Detail{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+/* .......................................................Band-Name..................................... */
+.Band-Name{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+}
+.Band-Name h6{
+    margin-right: 2.5rem;
+}
+/* ........................................................Follower..................................... */
+.Follower{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.Band-Journey{
+    color: whitesmoke;
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    overflow-wrap: break-word;
+    
+    
+
+    
+}
+/* ................................................Button......................................... */
+Button{
+    border: none;
+    background-image:linear-gradient(40deg,blue ,purple 80%);
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 6rem 6rem 2rem -30rem;
+    
+}
+
+.Play-Button{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    
+    
+}
+.Play-Button button{
+    margin-left: 6rem;
+}  
+.Play-Button button:hover{
+    transform: scale(1.1,1.1);
+}
+.Play-Button h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 6rem 0rem 2rem -18rem;
+    width: 8rem;
+    font-size: 3rem;
+    
+}
+/* ..................................Responsive........................... */
+@media (max-width:1350px){
+    .Band{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Queue label{
+    font-size: 15px;
+    margin-left: 1.2rem;
+    margin-top: 3rem;
+
+}
+.fa-ellipsis-h::before {
+    content: "";
+    margin-left: -120px;
+}
+}
+@media (max-width:768px){
+.Band{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+}
+
+        
+
+
+/* ....................................................Song-list (Main-Section)............................... */
+.Song-list{
+    margin-top: 2rem;
+    width: 75%;
+    
+}
+
+.Song-list li{
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    height: 6rem;
+    background-color: rgb(6, 6, 49);
+    margin-left: -2.4rem;
+    
+}
+.Song-list li:hover{
+    transform: scale(1.02,1.02);
+}
+.Song-list ol li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Song-list h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 1.5rem;
+    font-weight: lighter;
+    color: gray;
+    margin-left:-25rem;
+    
+}
+.Song-list p{
+    color: white;
+}
+
+.Song-list img{
+    border: none;
+    border-radius:10%;
+    
+}
+
+
+h3::first-line{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Song-list span i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: grey;
+
+}
+/* ......................................Responsive.................. */
+@media  (max-width:1350px){
+    .Song-list img {
+        margin-left: 28px;
+}
+.Song-list h3 {
+    margin-left: -8rem;
+}
+}
+
+/* ............................................Aside..................................................... */
+aside{
+    float: right;
+    width: 25%;  
+    margin-top: -92rem;
+    margin-right: -1rem;
+    }
+    /* .............................................................Queue.......................................... */
+    
+    
+    .Queue h1{
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    .Queue label{
+    margin-left: 14.2rem;
+    font-size: 1.5rem;
+    margin-top: -18rem;
+    }
+    
+    .Queue h1, label, input{
+        display:inline-block;
+    }
+    
+    .Queue input{
+        border: none;
+        background-color: transparent;
+        width: 1rem;
+    }
+    
+    .Queue-Section{
+    margin-top: -65px;
+    }
+    
+    .Queue input,label{
+        color: turquoise;
+        margin-top: 1rem;
+    }
+    
+    .Queue input:focus {
+        outline:none;
+    }
+    /* .......................................................Song-list(Aside Section)........................................... */
+    .Aside-Song-list{
+        margin-top: 2rem;
+        display:inline-block;
+        
+    }
+    .Aside-Song-list img{
+        margin-top: 0.4rem;
+        margin-left: 0.5rem;
+    }
+    
+    .Aside-Song-list li{
+        margin-top: 20px;
+        margin-left:-2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .Aside-Song-list ol li{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .Aside-Song-list h3{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 1rem;
+        font-weight: lighter;
+        color: gray;
+        margin-left:1rem;
+    }
+    
+    .Aside-Song-list img:hover{
+        transform: scale(1.1,1.1);
+    }
+    
+    h3::first-line{
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .Aside-Song-list span {
+        font-size: 20px;
+        margin-left: 8rem;
+        color: grey;
+        margin-top: 1rem;
+    }
+    /* ................................................Aside Song list (Part2) */
+    .Aside-Song-list-Part-2{
+        margin-top: 2rem;
+        overflow: auto;
+        height: 900px;
+    }
+    
+    .Aside-Song-list-Part-2 h1{
+        font-weight: 500;
+        margin-left: 0.5rem;
+        font-size: 1.8rem;
+    }
+    .Aside-Song-list-Part-2 span i{
+        color: red;
+        margin-top: 1rem;
+    }
+    
+    @media (max-width:1350px){
+        .Aside-Song-list-Part-2 span i {
+            color: red;
+            margin-top: 9px;
+            
+        }
+    }
+    
+        
+    
+    
+    /* ..................................Music-Play.......................... */
+    .Music-Play-img{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top:1rem ;
+        justify-content: space-between;
+        background-color: rgb(37, 36, 36); 
+        align-items: center;
+    }
+    .musicPlay{
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        width: 30%;
+        justify-content: space-evenly;
+        padding: 1rem 0;
+    }
+    .audioPlay{
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .songPlay{
+        display: flex;
+        align-items: center;
+    }
+    .audio-control {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        position: relative;
+        align-items: center;
+        color: white;
+    }
+    .audio-control span{
+        margin-left: 20px;
+    }
+    .slider{
+        margin-left: 15px;
+    } 
+    .Music-Play-img h3{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5px;
+        font-weight: lighter;
+        color: gray;
+        width: 10rem;
+        
+    }
+    .Music-Play-img h3::first-line{
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+    }
+    .Music-Play-img span {
+        font-size: 25px;
+        color: grey;
+        
+    }
+    .heart{
+        margin-top: -1rem;
+    }
+    .heart i{
+        margin: 1rem;
+    }
+    .Music-Play-Button i{
+        position: absolute;
+        font-size: 20px;
+        /* margin-top: -1rem; */
+        color:transparent;
+    }
+    .Music-Play-Button i:hover{
+        color: white;
+        
+    }
+    /* .....................................Responsiveness............................... */
+    @media (max-width:1024px){
+    .Music-Play-img h3{
+        margin-left: 20px;
+    }
+    }
+    @media(max-width:768px){
+        .heart{
+            margin-left: 0.5rem;
+        }
+        .Music-Play{
+            margin-left: 4rem;
+        }
+        .slider{
+            margin-top: -0.1rem;
+        }
+        .audio-control,.slider{
+            display: flex;
+        }
+        
+        .Music-Play-img{
+            flex-direction: column;
+        }
+        .musicPlay{
+            width: 100%;
+        }
+        .audioPlay{
+            width: 100%;
+        }
+        
+        }
+        
+    
+
+    
+    
