@@ -2,7 +2,8 @@
 #Link of Project is-
 https://utkarsh31031996.github.io/New-Music-Player/
 
-Project Description: I Created Music Player By using Html, Css.
+# Project Description: 
+I Created Music Player By using Html, Css.
 
 ## Features
 - Responsive
